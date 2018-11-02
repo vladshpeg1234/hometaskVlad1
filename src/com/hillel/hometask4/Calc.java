@@ -12,15 +12,15 @@ public static int methodSum( int x) {
     int result = ( x - x % 100 ) /100 + (x % 100 - x % 10 ) / 10 + (x % 10) ; // Кажая цифра отделена сложением
     return result ;
 }
-public static double methodFence( double x  , double y ) {
 
-    double fence = ( x + y ) * 2 ;
-    return fence ;
-}
-public static double methodField( double x  , double y ) {
+public static void methodFence(double a, double b) {
+        double fence  = 2 * (a + b);
+        double field = a * b;
+        System.out.println();
+        System.out.println("3.Участок");
+        System.out.println("- Длина забора = " + fence + " метр");
+        System.out.println("- Площадь газона = " + field + " метр кв");
 
-    double field = x * y ;
-    return field ;
 }
 
 public static double methodTrains( double v1 , double v2) {

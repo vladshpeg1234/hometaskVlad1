@@ -16,11 +16,8 @@ public class Starter {
             System.out.println( "2.Сумма цифр целого трехзначного числа = " + r1 );
         }
 
-        double r2 =Calc.methodFence(2,3) ; {
-            System.out.println();
-            System.out.println("3.Участок");
-            System.out.println(" - Длинна забора = " + r2);
-            System.out.println(" - Необходимая площадь газона");
+        Calc.methodFence(2,3) ; {
+            
         }
 
         double r3 = Calc.methodTrains(39.9,60) ; {
@@ -44,6 +41,7 @@ public class Starter {
                 System.out.println();
                 System.out.println(" Решения не сужествут при заданных коэффициентах, дискриминант меньше 0 и равен " + r4);
             } else  {
+
                 System.out.println(" x1 = " + Calc.methodX1(1,2,5)) ;
                 System.out.println(" x2 = " + Calc.methodX2(1,2,5)) ;
 
