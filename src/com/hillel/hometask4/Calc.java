@@ -2,10 +2,11 @@ package com.hillel.hometask4;
 
 public class Calc {
 
-public static double methodRate( double x, double y ) {
+public static void methodRate( double x, double y ) {
 
     double rateBacks = x / y;
-    return rateBacks;
+    System.out.println();
+    System.out.println("1. За " + x + " грн вы получите " + (rateBacks - rateBacks % 0.01) + " долл по курсу " + y);
 }
 public static int methodSum( int x) {
 
@@ -13,7 +14,7 @@ public static int methodSum( int x) {
     return result ;
 }
 
-public static void methodFence(double a, double b) {
+public static void methodFarm(double a, double b) {
         double fence  = 2 * (a + b);
         double field = a * b;
         System.out.println();
@@ -23,34 +24,41 @@ public static void methodFence(double a, double b) {
 
 }
 
-public static double methodTrains( double v1 , double v2) {
+public static void methodTrains( double v1 , double v2) {
 
     double crashTime1 = 4 / v1 ;
     double crashTime2 = 6 / v2 ;
-    double result = crashTime1 - crashTime2 ;
-    return result ;
-}
-public static double methodQuad(double a, double b, double c) {
+    double time = crashTime1 - crashTime2 ;
 
-    double d = b*b - 4 * a * c ;
-    return d ;
-}
-public static double methodX1(double a, double b, double c) {
-
-    double d = b * b - 4 * a * c ;
-    double dis = Math.sqrt(d) ;
-    double x1 =  ((-1) * b + dis) / ( 2 * a) ;
-    return x1 ;
+    System.out.println();
+    boolean r = time  < 0 ;
+    if (r) {
+        System.out.println(" При заданных скоростях V1 = " + v1 + " и  V2 = " + v2 + " поезда не столкнутся!");
+    } else {
+        System.out.println(" При заданных скоростях V1 = " + v1 + " и  V2 = " + v2 + "поезда столкнутся!");
+        System.out.println();
+    }
 }
 
-public static double methodX2(double a, double b, double c) {
+public static void methodQuad(double a, double b, double c) {
 
     double d = b * b - 4 * a * c;
     double dis = Math.sqrt(d);
-    double x2 = ((-1) * b - dis) / (2 * a);
-    return x2;
+
+    boolean result = d < 0;
+
+    if (result) {
+        System.out.println();
+        System.out.println(" Решения не сужествут при заданных коэффициентах, дискриминант меньше 0 и равен " + d);
+    } else {
+        double x1 = ((-1) * b + dis) / (2 * a);
+        double x2 = ((-1) * b - dis) / (2 * a);
+
+        System.out.println(" x1 = " + x1);
+        System.out.println(" x2 = " + x2);
+    }
+}
 
 }
 
 
-}

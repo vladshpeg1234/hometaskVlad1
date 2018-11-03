@@ -28,7 +28,6 @@ public class Starter {
 
         System.out.println("Double Sub = " + result);
 
-         Calc.calcPerimeterArea(2,5);
 
 
 

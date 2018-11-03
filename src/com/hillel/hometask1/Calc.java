@@ -31,11 +31,7 @@ public class Calc {
         return result;
 
     }
-    public static void calcPerimeterArea(int a, int b) {
-        int perimeter = 2 * (a + b);
-        int area = a * b;
-        System.out.println("Perimeter=" + perimeter + "meters");
-        System.out.println("Area=" + area + "square meters");
-    }
 
 }
+
+
