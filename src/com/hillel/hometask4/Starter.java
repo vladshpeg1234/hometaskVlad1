@@ -15,21 +15,15 @@ public class Starter {
             System.out.println( "2.Сумма цифр целого трехзначного числа = " + r1 );
         }
 
-        Calc.methodFarm(2,3); ; {
+        Calc.methodFarm(2,3); {
 
         }
 
         Calc.methodTrains(39.9,60) ; {
-            System.out.println();
-            System.out.println("4.Задание со столкновением поездов");
-
-
 
         }
-        System.out.println("5. Корни квадратного уравнения");
-        Calc.methodQuad(1,3,22.2) ; {
-            System.out.println();
 
+        Calc.methodQuad(1,5,4) ; {
 
     }
 
