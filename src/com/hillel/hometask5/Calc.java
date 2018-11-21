@@ -20,6 +20,8 @@ public class Calc {
 
     }
 
+
+
     public static void monthSeasonsSwitch (int n) {
 
         switch (n) {

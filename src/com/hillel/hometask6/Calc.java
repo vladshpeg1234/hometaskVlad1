@@ -1,5 +1,7 @@
 package com.hillel.hometask6;
 
+import com.hillel.Utils.MathHelper;
+
 import java.sql.SQLOutput;
 import java.util.Scanner;
 import java.util.function.DoubleBinaryOperator;
@@ -88,33 +90,7 @@ public class Calc {
 
 
     }
-    public static void sumRandom (int min, int max, int aNam) {
-        System.out.println("Сумма случайных " + aNam + " чисел в диапазоне от " + min + " до " + max);
-        int sum = 0;
-        double random;
-        double diapasonNumbers = max - min;
-        double minusPart = (0-min)/diapasonNumbers;
-        minusPart = Math.abs(minusPart);
 
-        for (int i = 1; i <= aNam; i++ ) {
-            random = Math.random();
-
-            if (random <= minusPart  ) {
-                int x =  (int) (random * (0 - min +1));
-                x = x * (-1);
-                System.out.println(x + "  " + random + " -  " + minusPart);
-                sum = sum + x ;
-
-            } else {
-                int x = (int) (random * (max + 1));
-                System.out.println(x + "  " + random+  " + " + minusPart);sum = sum + x ;
-
-            }
-        }
-        System.out.println(sum);
-
-
-    }
     public static void lengthString (String[] args) {
         String inStr = "Одесса мой город родной";
         int l = inStr.length();
@@ -125,7 +101,14 @@ public class Calc {
 
     }
 
+    public static void summsRandom (int numbs) {
+        int summs = 0;
+        for (int i = 1; i <= numbs; i++) {
+            int rnd = MathHelper.getRandom(-10,9);
 
-
+            summs = summs + rnd;
+        }
+        System.out.println("Сумма случайных " + numbs + " чисел " + " = " + summs);
+    }
 
 }
