@@ -41,18 +41,8 @@ public class Starter {
 
         System.out.println();
         System.out.println("7. Найти индексы вхождения символов");
-//arr[i] == 'о' || arr=='О' a==b || a=='О'
-            String inStr = "Одесса мой город родной";
-            int l = inStr.length();
-            char a = 'о';
-            for (int i =0; i < l; i++) {
-                char arr = inStr.charAt(i);
-                if (arr == 'о' || arr=='О') {
-                    System.out.print( i +", ");
-                }
-            }
-            System.out.println("Длина строки " + l);
 
+        Calc.findIndex();
 
     }
 

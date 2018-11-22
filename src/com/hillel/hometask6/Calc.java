@@ -91,14 +91,19 @@ public class Calc {
 
     }
 
-    public static void lengthString (String[] args) {
+    public static void findIndex() {
+
         String inStr = "Одесса мой город родной";
+        String s = inStr.toLowerCase();
         int l = inStr.length();
-
-        for (int i =0; i < l; i++) {
-            System.out.println(inStr.charAt(i));
+        char a = 'о';
+        for (int i = 0; i < l; i++) {
+            char arr = s.charAt(i);
+            if (arr == 'о') {
+                System.out.print(i + ", ");
+            }
         }
-
+        System.out.println("Длина строки " + l);
     }
 
     public static void summsRandom (int numbs) {
